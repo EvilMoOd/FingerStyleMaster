@@ -1,5 +1,5 @@
 {
-    "name" : "Scotfeel",
+    "name" : "scootfeel",
     "appid" : "__UNI__00246F3",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,9 +57,12 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx12d54d8bbd183c24",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "minified" : false,
+            "postcss" : false,
+            "es6" : false
         },
         "usingComponents" : true
     },

@@ -16,66 +16,91 @@
     question: string[];
     currentTab: number;
     correct: () => void;
+    error: () => void;
   }>();
 
   function isC() {
     if (CQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isDb() {
     if (DbQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isD() {
     if (DQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isEb() {
     if (EbQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isE() {
     if (EQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isF() {
     if (FQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isGb() {
     if (GbQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isG() {
     if (GQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isAb() {
     if (AbQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isA() {
     if (AQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isBb() {
     if (BbQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
   function isB() {
     if (BQuestion.includes(props.question[props.currentTab])) {
       props.correct();
+    } else {
+      props.error();
     }
   }
 </script>
@@ -91,10 +116,10 @@
     <view class="button" @tap="isB">B</view>
   </view>
   <view class="SmallFooter">
-    <view class="button" @tap="isDb">Db</view>
+    <view class="button" @tap="isDb">C#</view>
     <view class="button" @tap="isEb">Eb</view>
     <view class="button" style="background-color: transparent"></view>
-    <view class="button" @tap="isGb">Gb</view>
+    <view class="button" @tap="isGb">F#</view>
     <view class="button" @tap="isAb">Ab</view>
     <view class="button" @tap="isBb">Bb</view>
   </view>
@@ -105,16 +130,19 @@
     display: flex;
     position: fixed;
     bottom: 0;
+    font-family: yinpinxuanyihei;
     .button {
       text-align: center;
       line-height: 30vh;
       color: aqua;
       font-size: 30px;
       height: 20vh;
-      width: 13.7vw;
+      width: 13.8vw;
       border-left: 1px #000 solid;
       border-right: 1px #000 solid;
       border-radius: 0 0 5px 5px;
+      background-color: #fff;
+      opacity: 0.9;
 
       &:active {
         background-color: #777;
@@ -122,6 +150,7 @@
     }
   }
   .SmallFooter {
+    font-family: yinpinxuanyihei;
     display: flex;
     position: fixed;
     bottom: 10vh;
